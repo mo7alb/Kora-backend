@@ -17,4 +17,4 @@ router.post('/logout', (req, res) => {
     res.send({ "message": "Just logged user out" });
 })
 
-export default router
+module.exports = router
