@@ -2,6 +2,10 @@ const mongoose = require("mongoose");
 
 const rowSchema = new mongoose.Schema({
     team: mongoose.SchemaTypes.ObjectID,
+    gamesPlayed: {
+      type: Number,
+      required: true
+    },
     goals: {
         type: Number,
         required: true
@@ -9,6 +13,18 @@ const rowSchema = new mongoose.Schema({
     goalsConceded: {
         type: Number,
         required: true
+    },
+    won: {
+        type: Number,
+        required: true,
+    },
+    draw: {
+        type: Number,
+        required: true,
+    },
+    lost: {
+        type: Number,
+        required: true,
     },
     points: {
         type: Number,
@@ -27,19 +43,12 @@ const seasonSchema = new mongoose.Schema({
         required: true,
         default: false
     },
-    league: {
-        type: mongoose.SchemaType.ObjectID,
-        required: true,
-    },
+    league: mongoose.SchemaTypes.ObjectID,
     table: {
         type: [rowSchema],
         required: true,
         minLength: 2
     },
-    topScorers: [{
-        player: mongoose.SchemaTypes.ObjectID,
-        goals: { type: Number, required: true },
-    }]
 });
 
 module.exports = mongoose.model("Season", seasonSchema);

@@ -33,6 +33,9 @@ const playerSchema = new mongoose.Schema({
     position: {
         type: String,
         required: true
+    },
+    shirtNumber: {
+        type: Number
     }
 });
 

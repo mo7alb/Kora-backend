@@ -1,0 +1,381 @@
+﻿Date ,Venu,Home Team,Result,Away Team,Result
+05/08/2022,Selhurst Park,Crystal Palace,0,Arsenal,2
+06/08/2022,Craven Cottage,Fulham,2,Liverpool,2
+06/08/2022,Vitality Stadium,Bournemouth,2,Aston Villa,0
+06/08/2022,Elland Road,Leeds,2,Wolves,1
+06/08/2022,St. James' Park,Newcastle,2,Nottingham Forest,0
+06/08/2022,Tottenham Hotspur Stadium,Spurs,4,Southampton,1
+06/08/2022,Goodison Park,Everton,0,Chelsea,1
+07/08/2022,King Power Stadium,Leicester,2,Brentford,2
+07/08/2022,Old Trafford,Man Utd,1,Brighton,2
+07/08/2022,London Stadium,West Ham,0,Man City,2
+13/08/2022,Villa Park,Aston Villa,2,Everton,1
+13/08/2022,Emirates Stadium,Arsenal,4,Leicester,2
+13/08/2022,Amex Stadium,Brighton,0,Newcastle,0
+13/08/2022,Etihad Stadium,Man City,4,Bournemouth,0
+13/08/2022,St. Mary's Stadium,Southampton,2,Leeds,2
+13/08/2022,Molineux Stadium,Wolves,0,Fulham,0
+13/08/2022,Brentford Community Stadium,Brentford,4,Man Utd,0
+14/08/2022,The City Ground,Nottingham Forest,1,West Ham,0
+14/08/2022,Stamford Bridge,Chelsea,2,Spurs,2
+15/08/2022,Anfield,Liverpool,1,Crystal Palace,1
+20/08/2022,Tottenham Hotspur Stadium,Spurs,-,Wolves,-
+20/08/2022,Selhurst Park,Crystal Palace,-,Aston Villa,-
+20/08/2022,Goodison Park,Everton,-,Nottingham Forest,-
+20/08/2022,Craven Cottage,Fulham,-,Brentford,-
+20/08/2022,King Power Stadium,Leicester,-,Southampton,-
+20/08/2022,Vitality Stadium,Bournemouth,-,Arsenal,-
+21/08/2022,Elland Road,Leeds,-,Chelsea,-
+21/08/2022,London Stadium,West Ham,-,Brighton,-
+21/08/2022,St. James' Park,Newcastle,-,Man City,-
+22/08/2022,Old Trafford,Man Utd,-,Liverpool,-
+27/08/2022,St. Mary's Stadium,Southampton,-,Man Utd,-
+27/08/2022,Brentford Community Stadium,Brentford,-,Everton,-
+27/08/2022,Amex Stadium,Brighton,-,Leeds,-
+27/08/2022,Stamford Bridge,Chelsea,-,Leicester,-
+27/08/2022,Anfield,Liverpool,-,Bournemouth,-
+27/08/2022,Etihad Stadium,Man City,-,Crystal Palace,-
+27/08/2022,Emirates Stadium,Arsenal,-,Fulham,-
+28/08/2022,Villa Park,Aston Villa,-,West Ham,-
+28/08/2022,Molineux Stadium,Wolves,-,Newcastle,-
+28/08/2022,The City Ground,Nottingham Forest,-,Spurs,-
+30/08/2022,Craven Cottage,Fulham,-,Brighton,-
+30/08/2022,Selhurst Park,Crystal Palace,-,Brentford,-
+30/08/2022,St. Mary's Stadium,Southampton,-,Chelsea,-
+30/08/2022,Elland Road,Leeds,-,Everton,-
+31/08/2022,Vitality Stadium,Bournemouth,-,Wolves,-
+31/08/2022,Emirates Stadium,Arsenal,-,Aston Villa,-
+31/08/2022,Etihad Stadium,Man City,-,Nottingham Forest,-
+31/08/2022,London Stadium,West Ham,-,Spurs,-
+31/08/2022,Anfield,Liverpool,-,Newcastle,-
+01/09/2022,King Power Stadium,Leicester,-,Man Utd,-
+03/09/2022,Goodison Park,Everton,-,Liverpool,-
+03/09/2022,Brentford Community Stadium,Brentford,-,Leeds,-
+03/09/2022,St. James' Park,Newcastle,-,Crystal Palace,-
+03/09/2022,The City Ground,Nottingham Forest,-,Bournemouth,-
+03/09/2022,Tottenham Hotspur Stadium,Spurs,-,Fulham,-
+03/09/2022,Molineux Stadium,Wolves,-,Southampton,-
+03/09/2022,Villa Park,Aston Villa,-,Man City,-
+04/09/2022,Amex Stadium,Brighton,-,Leicester,-
+04/09/2022,Stamford Bridge,Chelsea,-,West Ham,-
+04/09/2022,Old Trafford,Man Utd,-,Arsenal,-
+10/09/2022,Craven Cottage,Fulham,-,Chelsea,-
+10/09/2022,Vitality Stadium,Bournemouth,-,Brighton,-
+10/09/2022,King Power Stadium,Leicester,-,Aston Villa,-
+10/09/2022,Anfield,Liverpool,-,Wolves,-
+10/09/2022,St. Mary's Stadium,Southampton,-,Brentford,-
+10/09/2022,Etihad Stadium,Man City,-,Spurs,-
+11/09/2022,Emirates Stadium,Arsenal,-,Everton,-
+11/09/2022,London Stadium,West Ham,-,Newcastle,-
+11/09/2022,Selhurst Park,Crystal Palace,-,Man Utd,-
+12/09/2022,Elland Road,Leeds,-,Nottingham Forest,-
+16/09/2022,Villa Park,Aston Villa,-,Southampton,-
+16/09/2022,The City Ground,Nottingham Forest,-,Fulham,-
+17/09/2022,Molineux Stadium,Wolves,-,Man City,-
+17/09/2022,Amex Stadium,Brighton,-,Crystal Palace,-
+17/09/2022,Goodison Park,Everton,-,West Ham,-
+17/09/2022,St. James' Park,Newcastle,-,Bournemouth,-
+17/09/2022,Tottenham Hotspur Stadium,Spurs,-,Leicester,-
+18/09/2022,Brentford Community Stadium,Brentford,-,Arsenal,-
+18/09/2022,Old Trafford,Man Utd,-,Leeds,-
+18/09/2022,Stamford Bridge,Chelsea,-,Liverpool,-
+01/10/2022,Emirates Stadium,Arsenal,-,Spurs,-
+01/10/2022,Vitality Stadium,Bournemouth,-,Brentford,-
+01/10/2022,Selhurst Park,Crystal Palace,-,Chelsea,-
+01/10/2022,Craven Cottage,Fulham,-,Newcastle,-
+01/10/2022,Anfield,Liverpool,-,Brighton,-
+01/10/2022,St. Mary's Stadium,Southampton,-,Everton,-
+01/10/2022,London Stadium,West Ham,-,Wolves,-
+02/10/2022,Etihad Stadium,Man City,-,Man Utd,-
+02/10/2022,Elland Road,Leeds,-,Aston Villa,-
+03/10/2022,King Power Stadium,Leicester,-,Nottingham Forest,-
+08/10/2022,Vitality Stadium,Bournemouth,-,Leicester,-
+08/10/2022,Stamford Bridge,Chelsea,-,Wolves,-
+08/10/2022,Etihad Stadium,Man City,-,Southampton,-
+08/10/2022,St. James' Park,Newcastle,-,Brentford,-
+08/10/2022,London Stadium,West Ham,-,Fulham,-
+08/10/2022,Amex Stadium,Brighton,-,Spurs,-
+09/10/2022,Selhurst Park,Crystal Palace,-,Leeds,-
+09/10/2022,Emirates Stadium,Arsenal,-,Liverpool,-
+09/10/2022,Goodison Park,Everton,-,Man Utd,-
+10/10/2022,The City Ground,Nottingham Forest,-,Aston Villa,-
+14/10/2022,Brentford Community Stadium,Brentford,-,Brighton,-
+15/10/2022,King Power Stadium,Leicester,-,Crystal Palace,-
+15/10/2022,Craven Cottage,Fulham,-,Bournemouth,-
+15/10/2022,St. Mary's Stadium,Southampton,-,West Ham,-
+15/10/2022,Molineux Stadium,Wolves,-,Nottingham Forest,-
+15/10/2022,Tottenham Hotspur Stadium,Spurs,-,Everton,-
+16/10/2022,Villa Park,Aston Villa,-,Chelsea,-
+16/10/2022,Elland Road,Leeds,-,Arsenal,-
+16/10/2022,Old Trafford,Man Utd,-,Newcastle,-
+16/10/2022,Anfield,Liverpool,-,Man City,-
+18/10/2022,Amex Stadium,Brighton,-,Nottingham Forest,-
+18/10/2022,Selhurst Park,Crystal Palace,-,Wolves,-
+18/10/2022,Vitality Stadium,Bournemouth,-,Southampton,-
+19/10/2022,St. James' Park,Newcastle,-,Everton,-
+19/10/2022,Anfield,Liverpool,-,West Ham,-
+19/10/2022,Old Trafford,Man Utd,-,Spurs,-
+20/10/2022,Brentford Community Stadium,Brentford,-,Chelsea,-
+20/10/2022,Craven Cottage,Fulham,-,Aston Villa,-
+20/10/2022,King Power Stadium,Leicester,-,Leeds,-
+20/10/2022,Emirates Stadium,Arsenal,-,Man City,-
+22/10/2022,The City Ground,Nottingham Forest,-,Liverpool,-
+22/10/2022,Goodison Park,Everton,-,Crystal Palace,-
+22/10/2022,Tottenham Hotspur Stadium,Spurs,-,Newcastle,-
+23/10/2022,Villa Park,Aston Villa,-,Brentford,-
+23/10/2022,Elland Road,Leeds,-,Fulham,-
+23/10/2022,Etihad Stadium,Man City,-,Brighton,-
+23/10/2022,St. Mary's Stadium,Southampton,-,Arsenal,-
+23/10/2022,Molineux Stadium,Wolves,-,Leicester,-
+23/10/2022,Stamford Bridge,Chelsea,-,Man Utd,-
+24/10/2022,London Stadium,West Ham,-,Bournemouth,-
+29/10/2022,King Power Stadium,Leicester,-,Man City,-
+29/10/2022,Vitality Stadium,Bournemouth,-,Spurs,-
+29/10/2022,Brentford Community Stadium,Brentford,-,Wolves,-
+29/10/2022,Amex Stadium,Brighton,-,Chelsea,-
+29/10/2022,Selhurst Park,Crystal Palace,-,Southampton,-
+29/10/2022,St. James' Park,Newcastle,-,Aston Villa,-
+29/10/2022,Craven Cottage,Fulham,-,Everton,-
+30/10/2022,Emirates Stadium,Arsenal,-,Nottingham Forest,-
+30/10/2022,Anfield,Liverpool,-,Leeds,-
+30/10/2022,Old Trafford,Man Utd,-,West Ham,-
+05/11/2022,Villa Park,Aston Villa,-,Man Utd,-
+05/11/2022,Stamford Bridge,Chelsea,-,Arsenal,-
+05/11/2022,Goodison Park,Everton,-,Leicester,-
+05/11/2022,Elland Road,Leeds,-,Bournemouth,-
+05/11/2022,Etihad Stadium,Man City,-,Fulham,-
+05/11/2022,The City Ground,Nottingham Forest,-,Brentford,-
+05/11/2022,St. Mary's Stadium,Southampton,-,Newcastle,-
+05/11/2022,Tottenham Hotspur Stadium,Spurs,-,Liverpool,-
+05/11/2022,London Stadium,West Ham,-,Crystal Palace,-
+05/11/2022,Molineux Stadium,Wolves,-,Brighton,-
+12/11/2022,Vitality Stadium,Bournemouth,-,Everton,-
+12/11/2022,Amex Stadium,Brighton,-,Aston Villa,-
+12/11/2022,Craven Cottage,Fulham,-,Man Utd,-
+12/11/2022,Anfield,Liverpool,-,Southampton,-
+12/11/2022,Etihad Stadium,Man City,-,Brentford,-
+12/11/2022,St. James' Park,Newcastle,-,Chelsea,-
+12/11/2022,The City Ground,Nottingham Forest,-,Crystal Palace,-
+12/11/2022,Tottenham Hotspur Stadium,Spurs,-,Leeds,-
+12/11/2022,London Stadium,West Ham,-,Leicester,-
+12/11/2022,Molineux Stadium,Wolves,-,Arsenal,-
+26/12/2022,Emirates Stadium,Arsenal,-,West Ham,-
+26/12/2022,Villa Park,Aston Villa,-,Liverpool,-
+26/12/2022,Brentford Community Stadium,Brentford,-,Spurs,-
+26/12/2022,Stamford Bridge,Chelsea,-,Bournemouth,-
+26/12/2022,Selhurst Park,Crystal Palace,-,Fulham,-
+26/12/2022,Goodison Park,Everton,-,Wolves,-
+26/12/2022,Elland Road,Leeds,-,Man City,-
+26/12/2022,King Power Stadium,Leicester,-,Newcastle,-
+26/12/2022,Old Trafford,Man Utd,-,Nottingham Forest,-
+26/12/2022,St. Mary's Stadium,Southampton,-,Brighton,-
+31/12/2022,Vitality Stadium,Bournemouth,-,Crystal Palace,-
+31/12/2022,Amex Stadium,Brighton,-,Arsenal,-
+31/12/2022,Craven Cottage,Fulham,-,Southampton,-
+31/12/2022,Anfield,Liverpool,-,Leicester,-
+31/12/2022,Etihad Stadium,Man City,-,Everton,-
+31/12/2022,St. James' Park,Newcastle,-,Leeds,-
+31/12/2022,The City Ground,Nottingham Forest,-,Chelsea,-
+31/12/2022,Tottenham Hotspur Stadium,Spurs,-,Aston Villa,-
+31/12/2022,London Stadium,West Ham,-,Brentford,-
+31/12/2022,Molineux Stadium,Wolves,-,Man Utd,-
+02/01/2023,Emirates Stadium,Arsenal,-,Newcastle,-
+02/01/2023,Villa Park,Aston Villa,-,Wolves,-
+02/01/2023,Brentford Community Stadium,Brentford,-,Liverpool,-
+02/01/2023,Stamford Bridge,Chelsea,-,Man City,-
+02/01/2023,Selhurst Park,Crystal Palace,-,Spurs,-
+02/01/2023,Goodison Park,Everton,-,Brighton,-
+02/01/2023,Elland Road,Leeds,-,West Ham,-
+02/01/2023,King Power Stadium,Leicester,-,Fulham,-
+02/01/2023,Old Trafford,Man Utd,-,Bournemouth,-
+02/01/2023,St. Mary's Stadium,Southampton,-,Nottingham Forest,-
+14/01/2023,Villa Park,Aston Villa,-,Leeds,-
+14/01/2023,Brentford Community Stadium,Brentford,-,Bournemouth,-
+14/01/2023,Amex Stadium,Brighton,-,Liverpool,-
+14/01/2023,Stamford Bridge,Chelsea,-,Crystal Palace,-
+14/01/2023,Goodison Park,Everton,-,Southampton,-
+14/01/2023,Old Trafford,Man Utd,-,Man City,-
+14/01/2023,St. James' Park,Newcastle,-,Fulham,-
+14/01/2023,The City Ground,Nottingham Forest,-,Leicester,-
+14/01/2023,Tottenham Hotspur Stadium,Spurs,-,Arsenal,-
+14/01/2023,Molineux Stadium,Wolves,-,West Ham,-
+21/01/2023,Vitality Stadium,Bournemouth,-,Nottingham Forest,-
+21/01/2023,Emirates Stadium,Arsenal,-,Man Utd,-
+21/01/2023,Selhurst Park,Crystal Palace,-,Newcastle,-
+21/01/2023,Craven Cottage,Fulham,-,Spurs,-
+21/01/2023,Elland Road,Leeds,-,Brentford,-
+21/01/2023,King Power Stadium,Leicester,-,Brighton,-
+21/01/2023,Anfield,Liverpool,-,Chelsea,-
+21/01/2023,Etihad Stadium,Man City,-,Wolves,-
+21/01/2023,St. Mary's Stadium,Southampton,-,Aston Villa,-
+21/01/2023,London Stadium,West Ham,-,Everton,-
+04/02/2023,Villa Park,Aston Villa,-,Leicester,-
+04/02/2023,Brentford Community Stadium,Brentford,-,Southampton,-
+04/02/2023,Amex Stadium,Brighton,-,Bournemouth,-
+04/02/2023,Stamford Bridge,Chelsea,-,Fulham,-
+04/02/2023,Goodison Park,Everton,-,Arsenal,-
+04/02/2023,Old Trafford,Man Utd,-,Crystal Palace,-
+04/02/2023,St. James' Park,Newcastle,-,West Ham,-
+04/02/2023,The City Ground,Nottingham Forest,-,Leeds,-
+04/02/2023,Tottenham Hotspur Stadium,Spurs,-,Man City,-
+04/02/2023,Molineux Stadium,Wolves,-,Liverpool,-
+11/02/2023,Vitality Stadium,Bournemouth,-,Newcastle,-
+11/02/2023,Emirates Stadium,Arsenal,-,Brentford,-
+11/02/2023,Selhurst Park,Crystal Palace,-,Brighton,-
+11/02/2023,Craven Cottage,Fulham,-,Nottingham Forest,-
+11/02/2023,Elland Road,Leeds,-,Man Utd,-
+11/02/2023,King Power Stadium,Leicester,-,Spurs,-
+11/02/2023,Anfield,Liverpool,-,Everton,-
+11/02/2023,Etihad Stadium,Man City,-,Aston Villa,-
+11/02/2023,St. Mary's Stadium,Southampton,-,Wolves,-
+11/02/2023,London Stadium,West Ham,-,Chelsea,-
+18/02/2023,Villa Park,Aston Villa,-,Arsenal,-
+18/02/2023,Brentford Community Stadium,Brentford,-,Crystal Palace,-
+18/02/2023,Amex Stadium,Brighton,-,Fulham,-
+18/02/2023,Stamford Bridge,Chelsea,-,Southampton,-
+18/02/2023,Goodison Park,Everton,-,Leeds,-
+18/02/2023,Old Trafford,Man Utd,-,Leicester,-
+18/02/2023,St. James' Park,Newcastle,-,Liverpool,-
+18/02/2023,The City Ground,Nottingham Forest,-,Man City,-
+18/02/2023,Tottenham Hotspur Stadium,Spurs,-,West Ham,-
+18/02/2023,Molineux Stadium,Wolves,-,Bournemouth,-
+25/02/2023,Vitality Stadium,Bournemouth,-,Man City,-
+25/02/2023,Selhurst Park,Crystal Palace,-,Liverpool,-
+25/02/2023,Goodison Park,Everton,-,Aston Villa,-
+25/02/2023,Craven Cottage,Fulham,-,Wolves,-
+25/02/2023,Elland Road,Leeds,-,Southampton,-
+25/02/2023,King Power Stadium,Leicester,-,Arsenal,-
+25/02/2023,Old Trafford,Man Utd,-,Brentford,-
+25/02/2023,St. James' Park,Newcastle,-,Brighton,-
+25/02/2023,Tottenham Hotspur Stadium,Spurs,-,Chelsea,-
+25/02/2023,London Stadium,West Ham,-,Nottingham Forest,-
+04/03/2023,Emirates Stadium,Arsenal,-,Bournemouth,-
+04/03/2023,Villa Park,Aston Villa,-,Crystal Palace,-
+04/03/2023,Brentford Community Stadium,Brentford,-,Fulham,-
+04/03/2023,Amex Stadium,Brighton,-,West Ham,-
+04/03/2023,Stamford Bridge,Chelsea,-,Leeds,-
+04/03/2023,Anfield,Liverpool,-,Man Utd,-
+04/03/2023,Etihad Stadium,Man City,-,Newcastle,-
+04/03/2023,The City Ground,Nottingham Forest,-,Everton,-
+04/03/2023,St. Mary's Stadium,Southampton,-,Leicester,-
+04/03/2023,Molineux Stadium,Wolves,-,Spurs,-
+11/03/2023,Vitality Stadium,Bournemouth,-,Liverpool,-
+11/03/2023,Selhurst Park,Crystal Palace,-,Man City,-
+11/03/2023,Goodison Park,Everton,-,Brentford,-
+11/03/2023,Craven Cottage,Fulham,-,Arsenal,-
+11/03/2023,Elland Road,Leeds,-,Brighton,-
+11/03/2023,King Power Stadium,Leicester,-,Chelsea,-
+11/03/2023,Old Trafford,Man Utd,-,Southampton,-
+11/03/2023,St. James' Park,Newcastle,-,Wolves,-
+11/03/2023,Tottenham Hotspur Stadium,Spurs,-,Nottingham Forest,-
+11/03/2023,London Stadium,West Ham,-,Aston Villa,-
+18/03/2023,Emirates Stadium,Arsenal,-,Crystal Palace,-
+18/03/2023,Villa Park,Aston Villa,-,Bournemouth,-
+18/03/2023,Brentford Community Stadium,Brentford,-,Leicester,-
+18/03/2023,Amex Stadium,Brighton,-,Man Utd,-
+18/03/2023,Stamford Bridge,Chelsea,-,Everton,-
+18/03/2023,Anfield,Liverpool,-,Fulham,-
+18/03/2023,Etihad Stadium,Man City,-,West Ham,-
+18/03/2023,The City Ground,Nottingham Forest,-,Newcastle,-
+18/03/2023,St. Mary's Stadium,Southampton,-,Spurs,-
+18/03/2023,Molineux Stadium,Wolves,-,Leeds,-
+01/04/2023,Vitality Stadium,Bournemouth,-,Fulham,-
+01/04/2023,Emirates Stadium,Arsenal,-,Leeds,-
+01/04/2023,Amex Stadium,Brighton,-,Brentford,-
+01/04/2023,Stamford Bridge,Chelsea,-,Aston Villa,-
+01/04/2023,Selhurst Park,Crystal Palace,-,Leicester,-
+01/04/2023,Goodison Park,Everton,-,Spurs,-
+01/04/2023,Etihad Stadium,Man City,-,Liverpool,-
+01/04/2023,St. James' Park,Newcastle,-,Man Utd,-
+01/04/2023,The City Ground,Nottingham Forest,-,Wolves,-
+01/04/2023,London Stadium,West Ham,-,Southampton,-
+08/04/2023,Villa Park,Aston Villa,-,Nottingham Forest,-
+08/04/2023,Brentford Community Stadium,Brentford,-,Newcastle,-
+08/04/2023,Craven Cottage,Fulham,-,West Ham,-
+08/04/2023,Elland Road,Leeds,-,Crystal Palace,-
+08/04/2023,King Power Stadium,Leicester,-,Bournemouth,-
+08/04/2023,Anfield,Liverpool,-,Arsenal,-
+08/04/2023,Old Trafford,Man Utd,-,Everton,-
+08/04/2023,St. Mary's Stadium,Southampton,-,Man City,-
+08/04/2023,Tottenham Hotspur Stadium,Spurs,-,Brighton,-
+08/04/2023,Molineux Stadium,Wolves,-,Chelsea,-
+15/04/2023,Villa Park,Aston Villa,-,Newcastle,-
+15/04/2023,Stamford Bridge,Chelsea,-,Brighton,-
+15/04/2023,Goodison Park,Everton,-,Fulham,-
+15/04/2023,Elland Road,Leeds,-,Liverpool,-
+15/04/2023,Etihad Stadium,Man City,-,Leicester,-
+15/04/2023,The City Ground,Nottingham Forest,-,Man Utd,-
+15/04/2023,St. Mary's Stadium,Southampton,-,Crystal Palace,-
+15/04/2023,Tottenham Hotspur Stadium,Spurs,-,Bournemouth,-
+15/04/2023,London Stadium,West Ham,-,Arsenal,-
+15/04/2023,Molineux Stadium,Wolves,-,Brentford,-
+22/04/2023,Vitality Stadium,Bournemouth,-,West Ham,-
+22/04/2023,Emirates Stadium,Arsenal,-,Southampton,-
+22/04/2023,Brentford Community Stadium,Brentford,-,Aston Villa,-
+22/04/2023,Amex Stadium,Brighton,-,Man City,-
+22/04/2023,Selhurst Park,Crystal Palace,-,Everton,-
+22/04/2023,Craven Cottage,Fulham,-,Leeds,-
+22/04/2023,King Power Stadium,Leicester,-,Wolves,-
+22/04/2023,Anfield,Liverpool,-,Nottingham Forest,-
+22/04/2023,Old Trafford,Man Utd,-,Chelsea,-
+22/04/2023,St. James' Park,Newcastle,-,Spurs,-
+25/04/2023,Goodison Park,Everton,-,Newcastle,-
+25/04/2023,Elland Road,Leeds,-,Leicester,-
+25/04/2023,The City Ground,Nottingham Forest,-,Brighton,-
+25/04/2023,Tottenham Hotspur Stadium,Spurs,-,Man Utd,-
+25/04/2023,London Stadium,West Ham,-,Liverpool,-
+25/04/2023,Molineux Stadium,Wolves,-,Crystal Palace,-
+25/04/2023,Villa Park,Aston Villa,-,Fulham,-
+26/04/2023,Stamford Bridge,Chelsea,-,Brentford,-
+26/04/2023,St. Mary's Stadium,Southampton,-,Bournemouth,-
+26/04/2023,Etihad Stadium,Man City,-,Arsenal,-
+29/04/2023,Vitality Stadium,Bournemouth,-,Leeds,-
+29/04/2023,Emirates Stadium,Arsenal,-,Chelsea,-
+29/04/2023,Brentford Community Stadium,Brentford,-,Nottingham Forest,-
+29/04/2023,Amex Stadium,Brighton,-,Wolves,-
+29/04/2023,Selhurst Park,Crystal Palace,-,West Ham,-
+29/04/2023,Craven Cottage,Fulham,-,Man City,-
+29/04/2023,King Power Stadium,Leicester,-,Everton,-
+29/04/2023,Anfield,Liverpool,-,Spurs,-
+29/04/2023,Old Trafford,Man Utd,-,Aston Villa,-
+29/04/2023,St. James' Park,Newcastle,-,Southampton,-
+06/05/2023,Vitality Stadium,Bournemouth,-,Chelsea,-
+06/05/2023,Amex Stadium,Brighton,-,Everton,-
+06/05/2023,Craven Cottage,Fulham,-,Leicester,-
+06/05/2023,Anfield,Liverpool,-,Brentford,-
+06/05/2023,Etihad Stadium,Man City,-,Leeds,-
+06/05/2023,St. James' Park,Newcastle,-,Arsenal,-
+06/05/2023,The City Ground,Nottingham Forest,-,Southampton,-
+06/05/2023,Tottenham Hotspur Stadium,Spurs,-,Crystal Palace,-
+06/05/2023,London Stadium,West Ham,-,Man Utd,-
+06/05/2023,Molineux Stadium,Wolves,-,Aston Villa,-
+13/05/2023,Emirates Stadium,Arsenal,-,Brighton,-
+13/05/2023,Villa Park,Aston Villa,-,Spurs,-
+13/05/2023,Brentford Community Stadium,Brentford,-,West Ham,-
+13/05/2023,Stamford Bridge,Chelsea,-,Nottingham Forest,-
+13/05/2023,Selhurst Park,Crystal Palace,-,Bournemouth,-
+13/05/2023,Goodison Park,Everton,-,Man City,-
+13/05/2023,Elland Road,Leeds,-,Newcastle,-
+13/05/2023,King Power Stadium,Leicester,-,Liverpool,-
+13/05/2023,Old Trafford,Man Utd,-,Wolves,-
+13/05/2023,St. Mary's Stadium,Southampton,-,Fulham,-
+20/05/2023,Vitality Stadium,Bournemouth,-,Man Utd,-
+20/05/2023,Amex Stadium,Brighton,-,Southampton,-
+20/05/2023,Craven Cottage,Fulham,-,Crystal Palace,-
+20/05/2023,Anfield,Liverpool,-,Aston Villa,-
+20/05/2023,Etihad Stadium,Man City,-,Chelsea,-
+20/05/2023,St. James' Park,Newcastle,-,Leicester,-
+20/05/2023,The City Ground,Nottingham Forest,-,Arsenal,-
+20/05/2023,Tottenham Hotspur Stadium,Spurs,-,Brentford,-
+20/05/2023,London Stadium,West Ham,-,Leeds,-
+20/05/2023,Molineux Stadium,Wolves,-,Everton,-
+28/05/2023,Emirates Stadium,Arsenal,-,Wolves,-
+28/05/2023,Villa Park,Aston Villa,-,Brighton,-
+28/05/2023,Brentford Community Stadium,Brentford,-,Man City,-
+28/05/2023,Stamford Bridge,Chelsea,-,Newcastle,-
+28/05/2023,Selhurst Park,Crystal Palace,-,Nottingham Forest,-
+28/05/2023,Goodison Park,Everton,-,Bournemouth,-
+28/05/2023,Elland Road,Leeds,-,Spurs,-
+28/05/2023,King Power Stadium,Leicester,-,West Ham,-
+28/05/2023,Old Trafford,Man Utd,-,Fulham,-
+28/05/2023,St. Mary's Stadium,Southampton,-,Liverpool,-
