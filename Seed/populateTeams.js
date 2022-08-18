@@ -88,5 +88,5 @@ addLeagueToTeams()
    .then(() =>
       console.log("added league to all teams and added all teams to the league")
    )
-   .catch(err => console.error(error))
+   .catch(err => console.error(err))
    .finally(() => process.exit(0));

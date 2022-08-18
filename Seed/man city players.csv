@@ -1,23 +1,23 @@
-﻿shirtNumber,position,country,name
-2,DF,England,Kyle Walker
-3,DF,Portugal,Rúben Dias 
-4,MF,England,Kalvin Phillips
-5,DF,England,John Stones
-6,DF,Netherlands,Nathan Aké
-7,DF,Portugal,João Cancelo
-8,MF,Germany,İlkay Gündoğan 
-9,FW,Norway,Erling Haaland
-10,MF,England,Jack Grealish
-14,DF,Spain,Aymeric Laporte
-16,MF,Spain,Rodri
-17,MF,Belgium,Kevin De Bruyne
-18,GK,Germany,Stefan Ortega
-19,FW,Argentina,Julián Álvarez
-20,MF,Portugal,Bernardo Silva
-21,DF,Spain,Sergio Gómez
-26,FW,Algeria,Riyad Mahrez
-31,GK,Brazil,Ederson
-33,GK,England,Scott Carson
-47,MF,England,Phil Foden
-80,MF,England,Cole Palmer
-82,DF,England,Rico Lewis
+﻿shirtNumber,position,country,name,age
+2,DF,England,Kyle Walker,32
+3,DF,Portugal,Rúben Dias ,25
+4,MF,England,Kalvin Phillips,26
+5,DF,England,John Stones,28
+6,DF,Netherlands,Nathan Aké,27
+7,DF,Portugal,João Cancelo,28
+8,MF,Germany,İlkay Gündoğan ,31
+9,FW,Norway,Erling Haaland,22
+10,MF,England,Jack Grealish,26
+14,DF,Spain,Aymeric Laporte,28
+16,MF,Spain,Rodri,26
+17,MF,Belgium,Kevin De Bruyne,31
+18,GK,Germany,Stefan Ortega,29
+19,FW,Argentina,Julián Álvarez,22
+20,MF,Portugal,Bernardo Silva,28
+21,DF,Spain,Sergio Gómez,21
+26,FW,Algeria,Riyad Mahrez,31
+31,GK,Brazil,Ederson,29
+33,GK,England,Scott Carson,36
+47,MF,England,Phil Foden,22
+80,MF,England,Cole Palmer,20
+82,DF,England,Rico Lewis,17

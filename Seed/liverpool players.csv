@@ -1,28 +1,28 @@
-﻿shirtNumber,position,country,name,,,,,
-1,GK,Brazil,Alisson,,,,,
-2,DF,England,Joe Gomez,,,,,
-3,MF,Brazil,Fabinho,,,,,
-4,DF,Netherland,Virgil van Dijk,,,,,
-5,DF,France,Ibrahima Konaté,,,,,
-6,MF,Spain,Thiago Alcântara,,,,,
-7,MF,England,James Milner ,,,,,
-8,MF,Guinea,Naby Keïta,,,,,
-9,FW,Brazil,Roberto Firmino,,,,,
-11,FW,Egypt,Mohamed Salah,,,,,
-13,GK,Spain,Adrián,,,,,
-14,MF,England,Jordan Henderson ,,,,,
-15,MF,England,Alex Oxlade-Chamberlain,,,,,
-17,MF,England,Curtis Jones,,,,,
-19,MF,England,Harvey Elliott,,,,,
-20,FW,Portugal,Diogo Jota,,,,,
-21,DF,Greece,Kostas Tsimikas,,,,,
-22,DF,Scotland,Calvin Ramsay,,,,,
-23,FW,Colombia,Luis Díaz,,,,,
-26,DF,Scotland,Andrew Robertson,,,,,
-27,FW,Uruguay,Darwin Núñez,,,,,
-28,FW,Portugal,Fábio Carvalho,,,,,
-32,DF,Cameroon,Joël Matip,,,,,
-47,DF,England,Nat Phillips,,,,,
-62,GK,Ireland,Caoimhín Kelleher,,,,,
-66,DF,England,Trent Alexander-Arnold,,,,,
-72,DF,Netherland,Sepp van den Berg,,,,,
+﻿shirtNumber,position,country,name,age
+1,GK,Brazil,Alisson,29
+2,DF,England,Joe Gomez,25
+3,MF,Brazil,Fabinho,28
+4,DF,Netherland,Virgil van Dijk,31
+5,DF,France,Ibrahima Konaté,23
+6,MF,Spain,Thiago Alcântara,31
+7,MF,England,James Milner ,36
+8,MF,Guinea,Naby Keïta,27
+9,FW,Brazil,Roberto Firmino,30
+11,FW,Egypt,Mohamed Salah,30
+13,GK,Spain,Adrián,35
+14,MF,England,Jordan Henderson ,32
+15,MF,England,Alex Oxlade-Chamberlain,29
+17,MF,England,Curtis Jones,21
+19,MF,England,Harvey Elliott,19
+20,FW,Portugal,Diogo Jota,25
+21,DF,Greece,Kostas Tsimikas,26
+22,DF,Scotland,Calvin Ramsay,19
+23,FW,Colombia,Luis Díaz,25
+26,DF,Scotland,Andrew Robertson,28
+27,FW,Uruguay,Darwin Núñez,23
+28,FW,Portugal,Fábio Carvalho,19
+32,DF,Cameroon,Joël Matip,31
+47,DF,England,Nat Phillips,25
+62,GK,Ireland,Caoimhín Kelleher,23
+66,DF,England,Trent Alexander-Arnold,23
+72,DF,Netherland,Sepp van den Berg,20
