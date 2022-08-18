@@ -7,13 +7,11 @@ const teamSchema = new mongoose.Schema({
    },
    coach: {
       type: String,
-      required: true,
       minLength: 4,
       maxLength: 120,
    },
    stadium: {
       type: String,
-      required: true,
    },
    leagues: [mongoose.SchemaTypes.ObjectID],
 });
