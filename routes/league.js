@@ -1,8 +1,6 @@
 const express = require("express");
 const Team = require("../model/Team");
 const League = require("../model/League");
-const User = require("../model/User");
-const AuthMiddleware = require("../middleware/auth");
 
 const router = express.Router();
 

@@ -17,16 +17,12 @@ mongoose.connect(
    e => console.error(e)
 );
 
-// import routes
-const authRoutes = require("./routes/authenticate");
-const matchesRoutes = require("./routes/matches");
-const teamRoutes = require("./routes/team");
-
 // use imported routes
-app.use("/api/auth", authRoutes);
-app.use("/api/matches", matchesRoutes);
-app.use("/api/teams", teamRoutes);
+app.use("/api/auth", require("./routes/authenticate"));
+app.use("/api/matches", require("./routes/matches"));
+app.use("/api/teams", require("./routes/team"));
 app.use("/api/leagues", require("./routes/league"));
+app.use("/api/", require("./routes/season"));
 
 const port = 3000;
 app.listen(port, () => console.log(`app running on http://localhost:${port}`));
