@@ -19,11 +19,14 @@ mongoose.connect(
 
 // import routes
 const authRoutes = require("./routes/authenticate");
-const matchesRoute = require("./routes/matches");
+const matchesRoutes = require("./routes/matches");
+const teamRoutes = require("./routes/team");
 
 // use imported routes
 app.use("/api/auth", authRoutes);
-app.use("/api/matches", matchesRoute);
+app.use("/api/matches", matchesRoutes);
+app.use("/api/teams", teamRoutes);
+app.use("/api/leagues", require("./routes/league"));
 
 const port = 3000;
 app.listen(port, () => console.log(`app running on http://localhost:${port}`));

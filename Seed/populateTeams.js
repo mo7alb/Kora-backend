@@ -69,7 +69,7 @@ async function addLeagueToTeams() {
 
       // update team
       await Team.findByIdAndUpdate(team._id, {
-         $push: { leagues: premierLeague._id },
+         $push: { leagues: { league: premierLeague._id } },
       });
 
       // update league

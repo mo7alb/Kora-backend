@@ -62,6 +62,7 @@ router.post("/register", async (req, res) => {
 
 // let users login to the system
 router.post("/login", async (req, res) => {
+   console.log(req.body);
    // check if not object is passed
    if (JSON.stringify({}) == JSON.stringify(req.body)) {
       return res.status(400).send({

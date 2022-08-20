@@ -13,7 +13,11 @@ const teamSchema = new mongoose.Schema({
    stadium: {
       type: String,
    },
-   leagues: [mongoose.SchemaTypes.ObjectID],
+   leagues: [
+      {
+         league: mongoose.SchemaTypes.ObjectID,
+      },
+   ],
 });
 
 module.exports = mongoose.model("Team", teamSchema);
