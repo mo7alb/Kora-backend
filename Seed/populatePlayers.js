@@ -36,8 +36,8 @@ function addPlayerToDB(fileName) {
 }
 
 filePaths = [
-   `${__dirname}/man city players.csv`,
-   `${__dirname}/liverpool players.csv`,
+   `${__dirname}/data/man city players.csv`,
+   `${__dirname}/data/liverpool players.csv`,
 ];
 
 addPlayerToDB(filePaths[0]);
@@ -58,6 +58,7 @@ function addTeamReference(fileName, teamName) {
                   { name: row[keys[3]] },
                   { team: team._id }
                );
+               console.log("updated player");
             })();
          });
    } else if (teamName == "liverpool") {
@@ -74,7 +75,10 @@ function addTeamReference(fileName, teamName) {
                   { name: row[keys[3]] },
                   { team: team._id }
                );
-            })();
+               console.log("updated player");
+            })().then(() =>
+               console.log("Linked all players with respective teams")
+            );
          });
    }
 }

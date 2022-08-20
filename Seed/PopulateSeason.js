@@ -13,70 +13,63 @@ const parser = require("csv-parser");
 
 const previousPath = `${__dirname}/data/2021-22 season.csv`;
 
-async function populatePrevious() {
+async function populateSeasons() {
    // query league
    const league = await League.findOne({ title: "Premier League" });
    // create a season
-   let season = new Season({
+   let prevSeason = new Season({
       season: "2021-22",
       league: league._id,
    });
 
-   await season.save();
-}
+   await prevSeason.save();
 
-async function populateCurrentSeason() {
-   const league = await League.findOne({ title: "Premier League" });
-   let season = new Season({
+   let newSeason = new Season({
       season: "2022-23",
       isCurrent: true,
       league: league._id,
    });
-   await season.save();
+   await newSeason.save();
 }
 
-async function populatePreviousTable(fileName = previousPath) {
-   // populate seasons with team data
+populateSeasons()
+   .then(() => console.log("Successfully added all leagues"))
+   .catch(error => console.error(error))
+   .finally(() => process.exit(0));
+
+function readFromFile(fileName = previousPath) {
    fs.createReadStream(fileName)
       .pipe(parser())
-      .on("data", async function (row) {
+      .on("data", function (row) {
          let keys = Object.keys(row);
+         (async () => {
+            let team = await Team.findOne({ title: row[keys[0]] });
+            if (team == null) {
+               team = new Team({
+                  title: row[keys[0]],
+               });
 
-         const team = await Team.findOne({ title: row[keys[0]] });
-         if (team == null) {
-            team = new Team({
-               title: row[keys[0]],
-            });
+               await team.save();
+            }
 
-            await team.save();
-         }
+            const season = await Season.findOne({ season: "2021-22" });
 
-         const season = await Season.findOne({ season: "2021-22" });
-
-         await Season.findByIdAndUpdate(season._id, {
-            $push: {
-               table: {
-                  team: team._id,
-                  played: parseInt(row[keys[1]]),
-                  won: parseInt(row[keys[2]]),
-                  draw: parseInt(row[keys[3]]),
-                  lost: parseInt(row[keys[4]]),
-                  goals: parseInt(row[keys[5]]),
-                  goalsConceded: parseInt(row[keys[6]]),
-                  points: parseInt(row[keys[7]]),
+            await Season.findByIdAndUpdate(season._id, {
+               $push: {
+                  table: {
+                     team: team._id,
+                     played: parseInt(row[keys[1]]),
+                     won: parseInt(row[keys[2]]),
+                     draw: parseInt(row[keys[3]]),
+                     lost: parseInt(row[keys[4]]),
+                     goals: parseInt(row[keys[5]]),
+                     goalsConceded: parseInt(row[keys[6]]),
+                     points: parseInt(row[keys[7]]),
+                  },
                },
-            },
-         });
+            });
+         })();
       });
 }
 
-async function run() {
-   await populatePrevious();
-
-   await populateCurrentSeason();
-
-   populatePreviousTable();
-   process.exit(0);
-}
-
-run();
+readFromFile();

@@ -22,8 +22,7 @@ function populate(fileName = path) {
          const league = await League.findOne({ title: "Premier League" });
          const homeTeam = await Team.findOne({ title: row[keys[2]] });
          const awayTeam = await Team.findOne({ title: row[keys[4]] });
-         console.log("row  ===> ", row[keys[4]]);
-         console.log("away team ===> ", awayTeam);
+
          if (row[keys[3]] !== "-") {
             // have a result
             const match = new Match({

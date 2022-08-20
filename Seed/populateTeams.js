@@ -33,7 +33,7 @@ const teamsList = [
 const uri = process.env.MONOGO_DB_CONNECTION_URI;
 mongoose.connect(uri, () => console.log(`Connected to db`));
 
-function addTeamsToDB(fileName = "teams.csv") {
+function addTeamsToDB(fileName = "data/teams.csv") {
    let fullPath = `${__dirname}/${fileName}`;
 
    fs.createReadStream(fullPath)
@@ -64,23 +64,19 @@ async function addLeagueToTeams() {
    // add premier league to all teams
    for (let i = 0; i < teamsList.length; i++) {
       let name = teamsList[i];
-      const team = await Team.updateOne(
-         { title: name },
-         { leagues: [premierLeague._id] }
-      );
+      // get team instance from db
+      const team = await Team.findOne({ title: name });
+
+      // update team
+      await Team.findByIdAndUpdate(team._id, {
+         $push: { leagues: premierLeague._id },
+      });
+
+      // update league
+      await League.findByIdAndUpdate(premierLeague._id, {
+         $push: { teams: team._id },
+      });
    }
-
-   // add all teams to preimer league
-   let teamIds = [];
-   for (let j = 0; j < teamsList.length; j++) {
-      let name = teamsList[j];
-
-      let team = await Team.findOne({ title: name });
-      teamIds.push(team._id);
-   }
-
-   if (teamIds !== [])
-      await League.updateOne({ title: "Premier League" }, { teams: teamIds });
 }
 
 addTeamsToDB();
