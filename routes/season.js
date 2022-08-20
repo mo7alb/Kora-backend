@@ -18,7 +18,13 @@ router.get("/seasons/:league", async (req, res) => {
    try {
       let seasons = await Season.find({ league: league._id });
 
-      res.status(200).json(seasons);
+      res.status(200).json(
+         seasons.map(season => ({
+            _id: season._id,
+            season: season.season,
+            league: season.league,
+         }))
+      );
    } catch {
       res.status(400);
    }

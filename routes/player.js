@@ -10,7 +10,7 @@ const router = express.Router();
 router.get("/team/:team", async (req, res) => {
    let team;
    try {
-      team = await Team.findOne(req.params.team);
+      team = await Team.findById(req.params.team);
    } catch {
       res.status(404).json({ error: "team not found" });
    }
@@ -19,7 +19,14 @@ router.get("/team/:team", async (req, res) => {
 
    try {
       players = await Player.find({ team: team._id });
-      res.json(players).status(200);
+      res.json(
+         players.map(player => ({
+            _id: player._id,
+            name: player.name,
+            position: player.position,
+            shirtNumber: player.shirtNumber,
+         }))
+      ).status(200);
    } catch {
       res.status(500);
    }
@@ -31,7 +38,7 @@ router.get("/team/:team", async (req, res) => {
 router.get("/:id", async (req, res) => {
    let player;
    try {
-      player = Player.findById(req.params.id);
+      player = await Player.findById(req.params.id);
 
       res.status(200).json(player);
    } catch {

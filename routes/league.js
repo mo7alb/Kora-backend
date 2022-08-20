@@ -29,7 +29,7 @@ router.get("/", async (req, res) => {
  * Route used to get teams of a league
  * Requires a league id passed as a param
  */
-router.get("/:league", async (req, res) => {
+router.get("/teams/:league", async (req, res) => {
    if (req.params.league == "" || req.params.league == null)
       return res.status(400);
    try {

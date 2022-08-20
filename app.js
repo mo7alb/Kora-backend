@@ -2,7 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
-
+const Team = require("./model/Team");
 // create an instance of an express app
 const app = express();
 
@@ -16,6 +16,11 @@ mongoose.connect(
    () => console.log("connected to db"),
    e => console.error(e)
 );
+
+app.get("/", async (req, res) => {
+   const team = await Team.findOne({ title: "Manchester City" });
+   res.json(team);
+});
 
 // use imported routes
 app.use("/api/auth", require("./routes/authenticate"));

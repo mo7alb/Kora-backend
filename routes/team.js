@@ -94,33 +94,10 @@ router.post("/remove-favorite-team", AuthMiddleware, async (req, res) => {
 });
 
 /**
- * Route to get list of teams in a league
- */
-router.get("/league/:league", (req, res) => {
-   let league;
-   try {
-      league = League.findById(req.params.id);
-   } catch {
-      res.status(404);
-   }
-   let teams;
-   try {
-      teams = Team.find({
-         $elemMatch: {
-            leagues: league._id,
-         },
-      });
-      res.json(teams).status(200);
-   } catch {
-      res.status(404);
-   }
-});
-
-/**
  * Route to get a team
  * Requires a team id to be passed as a param
  */
-router.get("/team/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
    if (req.params.id == "" || req.params.id == null) return res.status(400);
 
    try {
