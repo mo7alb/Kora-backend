@@ -28,19 +28,26 @@ router.post("/add-favorite-team", AuthMiddleware, async (req, res) => {
       return res.status(400).json({ error: "team id is required" });
 
    let teamId = req.body.team_id;
+   let team;
+
    try {
-      let team = await Team.findById(teamId);
+      team = await Team.findById(teamId);
    } catch (error) {
-      return res.sendStatus(404);
+      return res.sendStatus(404).json({ error: "Team not found" });
+   }
+   console.log("team ===>", team);
+   let user;
+   try {
+      user = await User.findOne({ username: req.user.user });
+   } catch (error) {
+      return res.sendStatus(404).json({ error: "user not found" });
    }
    try {
-      let user = await User.findOne({ username: req.user.user });
-
       if (user.favTeams.includes(teamId)) return res.sendStatus(400);
 
       await User.findByIdAndUpdate(user._id, {
          $push: {
-            favTeams: [teamId],
+            favTeams: [team._id],
          },
       });
       res.sendStatus(200);
