@@ -4,6 +4,7 @@ const User = require("../model/User");
 const bcrypt = require("bcrypt");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
+const AuthMiddleware = require("../middleware/auth");
 
 // register new users
 router.post("/register", async (req, res) => {
@@ -60,7 +61,7 @@ router.post("/register", async (req, res) => {
    }
 });
 
-// let users login to the system
+// login user
 router.post("/login", async (req, res) => {
    // check if not object is passed
    if (JSON.stringify({}) == JSON.stringify(req.body)) {
@@ -100,6 +101,54 @@ router.post("/login", async (req, res) => {
    } catch (error) {
       console.error(error);
       return res.status(500).send();
+   }
+});
+
+// change user password
+router.post("/change-password", AuthMiddleware, async (req, res) => {
+   // check if not object is passed
+   if (JSON.stringify({}) == JSON.stringify(req.body)) {
+      return res.status(400).send({
+         error: "invalid data",
+      });
+   }
+   // check if all properties are sent
+   if (
+      req.body.old_password == undefined ||
+      req.body.new_password == undefined ||
+      req.body.confirm_password == undefined
+   ) {
+      return res.status(400).send({
+         error: "invalid data",
+      });
+   }
+
+   let user;
+   try {
+      user = await User.findOne({ username: req.user.user });
+   } catch {
+      res.status(404).json({ error: "user not found" });
+   }
+
+   let old_password = req.body.old_password;
+   let new_password = req.body.new_password;
+   let confirm_password = req.body.confirm_password;
+
+   // check if both passwords match
+   if (new_password !== confirm_password)
+      return res.status(400).json({ error: "Passwords do not match" });
+
+   // check if old password is correct
+   if (!(await bcrypt.compare(old_password, user.password))) {
+      return res.status(400).json({ error: "Incorrect previous password" });
+   }
+
+   try {
+      const hashedNewPassword = await bcrypt.hash(new_password, 10);
+      await User.findOneAndUpdate(user._id, { password: hashedNewPassword });
+      return res.sendStatus(200);
+   } catch {
+      res.status(500);
    }
 });
 
