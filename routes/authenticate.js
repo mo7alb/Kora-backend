@@ -10,7 +10,7 @@ const AuthMiddleware = require("../middleware/auth");
 router.post("/register", async (req, res) => {
    // check if not object is passed
    if (JSON.stringify({}) == JSON.stringify(req.body)) {
-      return res.status(400).send({
+      return res.sendStatus(400).send({
          error: "invalid data",
       });
    }
@@ -21,23 +21,21 @@ router.post("/register", async (req, res) => {
       req.body.email == undefined ||
       req.body.password == undefined
    ) {
-      return res.status(400).send({
+      return res.sendStatus(400).send({
          error: "invalid data",
       });
    }
    const { name, username, email, password } = req.body;
-
    // check if username already exists
    const duplicatedUsernames = await User.find({ username: username });
    if (duplicatedUsernames.length !== 0) {
-      console.log("duplicate usernames ===>", duplicatedUsernames);
-      return res.status(400).send("username already exists");
+      return res.sendStatus(400);
    }
 
    // check if email address already exists
    const duplicatedEmails = await User.find({ email: email });
    if (duplicatedEmails.length !== 0) {
-      return res.status(400).send("email already exists");
+      return res.sendStatus(400).send("email already exists");
    }
 
    // add user to db
@@ -53,7 +51,7 @@ router.post("/register", async (req, res) => {
 
       user.save();
 
-      res.status(201).send({ message: "Just registered user" });
+      res.status(201).send(user);
    } catch (error) {
       // adding user to db caused error
       console.error(error);
@@ -65,15 +63,11 @@ router.post("/register", async (req, res) => {
 router.post("/login", async (req, res) => {
    // check if not object is passed
    if (JSON.stringify({}) == JSON.stringify(req.body)) {
-      return res.status(400).send({
-         error: "username or password are required",
-      });
+      return res.status(400);
    }
    // check if all properties are sent
    if (req.body.username == undefined || req.body.password == undefined) {
-      return res.status(400).send({
-         error: "username or password are required",
-      });
+      return res.status(400);
    }
 
    try {
@@ -81,9 +75,7 @@ router.post("/login", async (req, res) => {
 
       const user = await User.findOne({ username: username });
       if (user == undefined) {
-         return res.status(400).send({
-            error: "invalid username",
-         });
+         return res.status(400);
       }
 
       if (await bcrypt.compare(password, user.password)) {

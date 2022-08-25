@@ -3,17 +3,9 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const uri = process.env.MONOGO_DB_CONNECTION_URI;
-mongoose.connect(uri, () => console.log(`Connected to db`));
-
-const Season = require("../model/Season");
-const League = require("../model/League");
-const Team = require("../model/Team");
-const fs = require("fs");
-const parser = require("csv-parser");
-
-const previousPath = `${__dirname}/data/2021-22 season.csv`;
-
-async function populateSeasons() {
+mongoose.connect(uri, async () => {
+   console.log("--- connected to db ---");
+   console.log("--- creating seasons ---");
    // query league
    const league = await League.findOne({ title: "Premier League" });
    // create a season
@@ -30,12 +22,15 @@ async function populateSeasons() {
       league: league._id,
    });
    await newSeason.save();
-}
+});
 
-populateSeasons()
-   .then(() => console.log("Successfully added all leagues"))
-   .catch(error => console.error(error))
-   .finally(() => process.exit(0));
+const Season = require("../model/Season");
+const League = require("../model/League");
+const Team = require("../model/Team");
+const fs = require("fs");
+const parser = require("csv-parser");
+
+const previousPath = `${__dirname}/data/2021-22 season.csv`;
 
 function readFromFile(fileName = previousPath) {
    fs.createReadStream(fileName)
