@@ -39,4 +39,3 @@ app.use("/api/matches", require("./routes/matches"));
 app.use("/api/teams", require("./routes/team"));
 app.use("/api/leagues", require("./routes/league"));
 app.use("/api/players", require("./routes/player"));
-app.use("/api/", require("./routes/season"));
