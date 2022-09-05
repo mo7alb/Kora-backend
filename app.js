@@ -7,7 +7,7 @@ const Team = require("./model/Team");
 // create an instance of an express app
 const app = express();
 
-const port = 3000;
+const port = 3000 || process.env.PORT;
 
 const cors = require("cors");
 app.use(cors());
