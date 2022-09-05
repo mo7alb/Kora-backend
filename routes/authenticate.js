@@ -10,9 +10,7 @@ const AuthMiddleware = require("../middleware/auth");
 router.post("/register", async (req, res) => {
    // check if not object is passed
    if (JSON.stringify({}) == JSON.stringify(req.body)) {
-      return res.sendStatus(400).send({
-         error: "invalid data",
-      });
+      return res.sendStatus(400);
    }
    // check if all properties are sent
    if (
@@ -35,7 +33,7 @@ router.post("/register", async (req, res) => {
    // check if email address already exists
    const duplicatedEmails = await User.find({ email: email });
    if (duplicatedEmails.length !== 0) {
-      return res.sendStatus(400).send("email already exists");
+      return res.sendStatus(400);
    }
 
    // add user to db
@@ -51,11 +49,11 @@ router.post("/register", async (req, res) => {
 
       user.save();
 
-      res.status(201).send(user);
+      res.status(201).json(user);
    } catch (error) {
       // adding user to db caused error
       console.error(error);
-      res.status(500);
+      res.sendStatus(500);
    }
 });
 
@@ -84,7 +82,15 @@ router.post("/login", async (req, res) => {
             process.env.SECRET_ACCESS_TOKEN
          );
 
-         res.json({ token });
+         res.json({
+            token,
+            user: {
+               username: user.username,
+               email: user.email,
+               favLeagues: user.favLeagues,
+               favTeams: user.favTeams,
+            },
+         });
       } else {
          return res.status(400).send({
             error: "incorrect password",
@@ -141,6 +147,36 @@ router.post("/change-password", AuthMiddleware, async (req, res) => {
       return res.sendStatus(200);
    } catch {
       res.status(500);
+   }
+});
+
+// delete a user
+router.delete("/", AuthMiddleware, async (req, res) => {
+   let user;
+   try {
+      user = await User.findOne({ username: req.user.user });
+   } catch {
+      return res.sendStatus(404);
+   }
+
+   try {
+      user.remove(err => {
+         if (err) console.error(err);
+      });
+
+      return res.sendStatus(204);
+   } catch (error) {
+      res.status(500).json({ error: "internal server error" });
+   }
+});
+
+router.get("/", AuthMiddleware, async (req, res) => {
+   let user;
+   try {
+      user = await User.findOne({ username: req.user.user });
+      return res.status(200).json(user);
+   } catch {
+      return res.sendStatus(404);
    }
 });
 

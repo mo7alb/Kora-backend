@@ -2,7 +2,16 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+const Season = require("../model/Season");
+const League = require("../model/League");
+const Team = require("../model/Team");
+const fs = require("fs");
+const parser = require("csv-parser");
+
+const previousPath = `${__dirname}/data/2021-22 season.csv`;
+
 const uri = process.env.MONOGO_DB_CONNECTION_URI;
+
 mongoose.connect(uri, async () => {
    console.log("--- connected to db ---");
    console.log("--- creating seasons ---");
@@ -22,18 +31,8 @@ mongoose.connect(uri, async () => {
       league: league._id,
    });
    await newSeason.save();
-});
 
-const Season = require("../model/Season");
-const League = require("../model/League");
-const Team = require("../model/Team");
-const fs = require("fs");
-const parser = require("csv-parser");
-
-const previousPath = `${__dirname}/data/2021-22 season.csv`;
-
-function readFromFile(fileName = previousPath) {
-   fs.createReadStream(fileName)
+   fs.createReadStream(previousPath)
       .pipe(parser())
       .on("data", function (row) {
          let keys = Object.keys(row);
@@ -65,6 +64,4 @@ function readFromFile(fileName = previousPath) {
             });
          })();
       });
-}
-
-readFromFile();
+});

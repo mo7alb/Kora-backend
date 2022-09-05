@@ -35,7 +35,7 @@ function populate(fileName = path) {
                   score: parseInt(row[keys[5]]),
                },
                venue: row[keys[1]],
-               date: Date(row[keys[0]]),
+               date: new Date(row[keys[0]]),
                league: league._id,
             });
 
@@ -50,7 +50,7 @@ function populate(fileName = path) {
                   team: awayTeam._id,
                },
                venue: row[keys[1]],
-               date: Date(row[keys[0]]),
+               date: new Date(row[keys[0]]),
                league: league._id,
             });
 

@@ -3,8 +3,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const Team = require("./model/Team");
+
 // create an instance of an express app
 const app = express();
+
+const port = 3000;
+
+const cors = require("cors");
+app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -13,7 +19,12 @@ app.use(express.json());
 const mongoDBURI = process.env.MONOGO_DB_CONNECTION_URI;
 mongoose.connect(
    mongoDBURI,
-   () => console.log("connected to db"),
+   () => {
+      console.log("connected to db");
+      app.listen(port, () =>
+         console.log(`app running on http://localhost:${port}`)
+      );
+   },
    e => console.error(e)
 );
 
@@ -29,6 +40,3 @@ app.use("/api/teams", require("./routes/team"));
 app.use("/api/leagues", require("./routes/league"));
 app.use("/api/players", require("./routes/player"));
 app.use("/api/", require("./routes/season"));
-
-const port = 3000;
-app.listen(port, () => console.log(`app running on http://localhost:${port}`));

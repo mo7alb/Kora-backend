@@ -1,7 +1,6 @@
 const express = require("express");
 const Match = require("../model/Match");
 const User = require("../model/User");
-const Team = require("../model/Team");
 const League = require("../model/League");
 const AuthMiddleware = require("../middleware/auth");
 
@@ -11,6 +10,13 @@ const router = express.Router();
  * route to return all matches of a league
  */
 router.get("/league/:league", async (req, res) => {
+   const date = new Date();
+   const day = date.getDate();
+   const month = date.getMonth();
+   const year = date.getFullYear();
+   const startDate = new Date(year, month, day - 1);
+   const endDate = new Date(year, month + 1, 0);
+
    let league;
    try {
       league = await League.findById(req.params.league);
@@ -20,7 +26,13 @@ router.get("/league/:league", async (req, res) => {
 
    let matches;
    try {
-      matches = await Match.find({ league: league._id });
+      matches = await Match.find({
+         league: league._id,
+         date: {
+            $gte: startDate,
+            $lt: endDate,
+         },
+      });
 
       res.status(200).json(matches);
    } catch {

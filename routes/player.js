@@ -23,8 +23,6 @@ router.get("/team/:team", async (req, res) => {
          players.map(player => ({
             _id: player._id,
             name: player.name,
-            position: player.position,
-            shirtNumber: player.shirtNumber,
          }))
       ).status(200);
    } catch {

@@ -22,7 +22,7 @@ router.get("/favorite-teams", AuthMiddleware, async (req, res) => {
 });
 
 /**
- * route to get a list of favorite teams
+ * route to add a team to favorite teams
  */
 router.post("/add-favorite-team", AuthMiddleware, async (req, res) => {
    if (req.body.team_id == undefined)
@@ -36,7 +36,7 @@ router.post("/add-favorite-team", AuthMiddleware, async (req, res) => {
    } catch (error) {
       return res.sendStatus(404).json({ error: "Team not found" });
    }
-   console.log("team ===>", team);
+
    let user;
    try {
       user = await User.findOne({ username: req.user.user });
